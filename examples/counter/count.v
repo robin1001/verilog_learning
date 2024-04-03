@@ -6,9 +6,9 @@ module count (
 
  always @(posedge clk) begin
      if (rst)
-         cnt = 8'b0;
+         cnt <= 8'b0;
      else
-         cnt = cnt + 1;
+         cnt <= cnt + 8'b0000_0001;
  end
 
 endmodule
